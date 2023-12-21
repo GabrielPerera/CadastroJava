@@ -12,10 +12,15 @@ public class Cadastrar {
     private int cep;
     private String endereco;
     private int numeroCasa;
-    //private String nacionalidade;
+    private String nacionalidade;
+    
+    public int num_pessoas = 0, max_pessoas = 500;
 
     
     private void preencherCadastro(Scanner cad){
+        if(num_pessoas <= max_pessoas){
+            System.out.println("Vamos começar o seu cadastro! Você é a pessoa número " + num_pessoas++);
+            
         System.out.print("Nome: ");
         this.nome = cad.next();
         
@@ -43,53 +48,19 @@ public class Cadastrar {
         System.out.print("Número da casa: ");
         this.numeroCasa = cad.nextInt();
         
-        //System.out.print("Nacionalidade: ");
-        //this.nacionalidade = cad.next();
+        System.out.print("Nacionalidade: ");
+        this.nacionalidade = cad.next();
         
+        num_pessoas++;
+        }
     }
-/*
-    public String getNome() {
-        return nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public int getTelefone() {
-        return telefone;
-    }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getEstCivil() {
-        return estCivil;
-    }
-
-    public int getCep() {
-        return cep;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public int getNumeroCasa() {
-        return numeroCasa;
-    }
-
-    public String getNacionalidade() {
-        return nacionalidade;
-    }
-*/    
     public void Cad(){
         preencherCadastro(cad);
     }
+    /*public void Contagem(){
+        for(int numPessoas = 0, numPessoas <= 500, numPessoas++){
+            preencherCadastro(cad);
+        }
+    }*/
     
 }

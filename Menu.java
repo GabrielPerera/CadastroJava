@@ -24,15 +24,19 @@ public class Menu{
         switch(opcao){
             case 1 -> {
                 System.out.println(" ");
-                System.out.println("A opcao que voce selecionou foi 1.");
+                System.out.println("A opção que você selecionou foi 1.");
                 System.out.println("Vamos fazer seu cadastro, um momento.");
                 cadastrar.Cad();
-                //preencherCadastro(cad);
                 System.out.println("");
                 Intro();
             }
             case 2 -> {
-            
+                System.out.println(" ");
+                System.out.println("A opção que você selecionou foi 2.");
+                System.out.println("Vamos para o menu de edição, um momento.");
+                
+                System.out.println(" ");
+                Intro();
             }
             case 3 -> {
             
