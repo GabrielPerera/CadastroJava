@@ -34,7 +34,7 @@ public class Menu{
                 System.out.println(" ");
                 System.out.println("A opção que você selecionou foi 2.");
                 System.out.println("Vamos para o menu de edição, um momento.");
-                
+                cadastrar.Edit();   
                 System.out.println(" ");
                 Intro();
             }
